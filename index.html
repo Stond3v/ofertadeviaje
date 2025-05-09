@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta de Viaje</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .header {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      color: white;
+      padding: 20px;
+      border-radius: 15px 15px 0 0;
+      font-weight: 800;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stars {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #facc15;
+    }
+
+    .price-box {
+      margin-top: 20px;
+      background-color: #f3f4f6;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .tag {
+      background-color: #f5315b;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .price {
+      margin-top: 10px;
+      font-size: 36px;
+      font-weight: 800;
+      color: #4f46e5;
+    }
+
+    .subprice {
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .benefits, .extra-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .benefits div, .extra-info div {
+      background-color: #ecfdf5;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #065f46;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 130px;
+      justify-content: center;
+    }
+
+    .extra-info div {
+      background-color: #e0f2fe;
+      color: #2563eb;
+    }
+
+    .cta-button {
+      display: block;
+      width: 100%;
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      color: white;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-text {
+      font-size: 12px;
+      margin-top: 12px;
+      color: #555;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span>🌐</span>
+        <span>Destinos Nacionales</span>
+      </div>
+      <div class="stars">
+        ⭐⭐⭐⭐⭐ Experiencia 5 estrellas
+      </div>
+    </div>
+
+    <div class="price-box">
+      <span class="tag">Oferta Especial</span>
+      <div class="price">$49.000 COP</div>
+      <div class="subprice">TARIFA FINAL POR TRAYECTO</div>
+    </div>
+
+    <div class="benefits">
+      <div>✅ Equipaje incluido</div>
+      <div>✅ Cambios flexibles</div>
+      <div>✅ Asistencia 24/7</div>
+      <div>✅ Mejor precio</div>
+    </div>
+
+    <div class="extra-info">
+      <div>📅 Disponibilidad inmediata</div>
+      <div>🌍 Múltiples destinos</div>
+    </div>
+
+    <button class="cta-button" onclick="window.location.href=''">COMPRAR AHORA</button>
+    <div class="footer-text">Aplican términos y condiciones</div>
+  </div>
+</body>
+</html>
